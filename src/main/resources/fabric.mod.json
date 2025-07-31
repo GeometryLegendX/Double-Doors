@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "geos_double_doors",
+  "version": "1.0.0-1.21.4",
+  "name": "Geo's Double Doors",
+  "description": "doors open/close automaticly when placed side-by-side",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/geos_double_doors/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.geo.doubledoors.client.geosdoubledoorsDataGenerator"
+    ],
+    "client": [
+      "com.geo.doubledoors.client.geosdoubledoorsClient"
+    ],
+    "main": [
+      "com.geo.doubledoors.geosdoubledoors"
+    ]
+  },
+  "mixins": [
+    "geos_double_doors.mixins.json",
+    {
+      "config": "geos_double_doors.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
+
+
+

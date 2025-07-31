@@ -1,0 +1,28 @@
+# === Gradle cache & build output ===
+.gradle/
+build/
+out/
+
+# === IntelliJ stuff ===
+.idea/
+*.iml
+
+# === Minecraft dev folders ===
+run/
+logs/
+*.log
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Java-related ===
+*.class
+*.jar
+
+# === VSCode (if you use it too) ===
+.vscode/
+
+# === Environment or temp files ===
+*.swp
+*.tmp
